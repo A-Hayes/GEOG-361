@@ -1,0 +1,43 @@
+Asa Hayes
+GEOG-361-502
+31 Jan, 2019
+
+Lab 1 Report
+
+Question 1. What is an ENVI Header File and what is its purpose?
+	The header file is formatted in ASCII and contains metadata about the image (rows/columns, resolution, map projection, etc.) that allows ENVI to properly display the image.
+	
+Question 2. What is the required and optional information in an ENVI header file?
+	There is a very large amount of possible optional fields for the header file tailored for use as needed with specific images, too much to list here, but examples are given in header . But, ENVI-format files require the following fields in the header in all cases: band name, byte order, data type, file type, header offset, interleave, lines per image per band, samples.
+	
+Question 3. What are the ENVI directly supported output file formats – e.g., in what data
+formats can ENVI directly save data. Which of these are raster and which of these are vector?
+	All output file types are exclusively raster or vector.
+		Raster: BIL, BIP, BSQ, ASCII, BMP, HDF, JPEG, JPEG 2000, PICT, PNG, TIFF (GeoTIFF), TIFF world (.tfw), SRF, XWD, ArcView® raster (.bil), ER Mapper, ERDAS IMAGINE, NITF 02.00/02.10, PCI (.pix)
+		Vector: shapefile, DXF, ENVI vector file (.evf)
+	
+Question 4. Display the Landsat ETM+ image (downtown.img) of Houston, Texas a as
+False Color composite image by using the RGB color display and displaying band 4 as red,
+band 3 as green and band 2 as blue. You should demonstrate your success with this by
+pasting the downtown Houston portion of the image into your lab report.
+	Image attached as "Q4_downtown.jpg"
+	
+Question 5. How many bands, rows (lines) and columns (samples) does the multi-spectral
+data set “downtown.img” have? What are the pixel depth (bits or byte per pixel) and spatial
+resolution (cell size)? What is the band label for each data layer?
+	Bands: 3, Rows: 517, Columns: 627 
+	Pixel Depth: 8-bit, Resolution: 1pix = 3m 
+	Band labels: "band 2", "band 3", "band 4" 
+	
+Question 6. What is the datum and map projection of the panchromatic Landsat image
+“houston_pan.img”? What is the geographic location of the top left corner of this image?
+What is the total geographic area covered by this image in square kilometers?
+	Datum: D_WGS_1984, Projection: UTM_Zone_15N (Transverse Mercator)
+	Location, Top-Left: 29.81562500 N, 95.40782778 E
+	Total Area (km): 2082027.402 km^2
+	
+	
+	1253 row * 1053 col = 1388018268 pixels
+	1388018268 pix * 1.5m per pix resolution = 2082027402m
+	2082027402m / 1000 m/km = 2082027.402km
+	
